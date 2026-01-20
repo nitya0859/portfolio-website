@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- External CSS -->
+    <title>Nitya Vishnoi - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Navbar -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="brand">My<span>Portfolio</span></div>
-            <nav class="nav">
+
+    <!-- Fixed Header -->
+    <header>
+        <div class="container">
+            <div class="logo">NITYA <span>VISHNOI</span></div>
+            <nav>
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
@@ -24,151 +23,153 @@
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero" id="home">
-        <div class="container hero-inner">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <!-- Photo Card on Left -->
+            <div class="profile-card">
+                <img src="profile.jpeg" alt="Nitya Vishnoi">
+                <div class="profile-info">
+                    <h3>NITYA VISHNOI</h3>
+                    <p>FrontEnd Developer</p>
+                    <p>📍 Ghaziabad, India</p>
+                </div>
+            </div>
+
+            <!-- Text on Right -->
             <div class="hero-text">
-                <p class="hero-tag">WEB DEVELOPER</p>
-                <h1>Hello, I'm <span class="hero-name">NITYA VISHNOI</span></h1>
-                <p class="hero-sub">
-                    A curious mind with a coder's logic -learning today. Building tomorrow, growing every single day!!
-                </p>
-                <div class="hero-actions">
+                <span class="badge">FRONTEND DEVELOPER</span>
+                <h1>Hello, I'm <span class="name-highlight">Nitya</span></h1>
+                <p>I build clean and simple web pages using HTML and CSS. My focus is on clear structure, readable text, and layouts that work beautifully on all devices.</p>
+                <p>Learning every day, building projects, and growing my skills one step at a time.</p>
+                <div class="buttons">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
-                </div>
-            </div>
-            <div class="hero-card">
-                <div class="hero-photo">
-                    <!-- Replace with your own image -->
-                    <img src="profile.jpeg" alt="Profile picture">
-                </div>
-                <div class="hero-info">
-                    <p><span>Name:</span> NITYA VISHNOI</p>
-                    <p><span>Role:</span> FrontEnd Developer</p>
-                    <p><span>Location:</span> Ghaziabad, India</p>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About -->
-    <section class="section" id="about">
+    <!-- About Section -->
+    <section id="about">
         <div class="container">
-            <h2 class="section-title">About <span>Me</span></h2>
-            <div class="two-col">
-                <div class="col">
-                    <p>
-                        I am a Computer Science student with a clear focus on frontend web development. I build responsive websites using HTML and CSS, with a strong emphasis on clarity, simplicity, and maintainable code.
-                    </p>
-                    <p>
-                        My goal is to deliver polished web experiences that look professional, perform smoothly, and feel effortless to navigate.
-                    </p>
+            <h2>About <span>Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm not just another developer — I'm someone who turns ideas into reality with clean code and sharp design. I specialize in crafting frontend experiences that don't just work, they impress.</p>
+                    <p>My code is clean, my layouts are precise, and my dedication to growth is relentless. Every project I build teaches me something new, and every challenge makes me stronger.</p>
                 </div>
-                <div class="col stats-grid">
-                    <div class="stat-card">
-                        <h3>Driven Learner</h3>
-                        <p>Solving projects daily to sharpen frontend skills and build a strong portfolio.</p>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <h3>🚀 Always Evolving</h3>
+                        <p>I don't wait for opportunities — I create them by building projects that push my limits every single day.</p>
                     </div>
-                    <div class="stat-card">
-                        <h3>Education</h3>
-                        <p>B.Tech CSE student combining core computer science learning with practical web design and development skills.</p>
+                    <div class="info-card">
+                        <h3>🎓 Smart Learner</h3>
+                        <p>B.Tech CSE student who believes in learning by doing, not just by reading textbooks.</p>
                     </div>
-                    <div class="stat-card">
-                        <h3>Strengths</h3>
-                        <p>Clean code, responsive layouts and attention to details.</p>
+                    <div class="info-card">
+                        <h3>💎 Quality First</h3>
+                        <p>I don't settle for "good enough" — clean code, pixel-perfect layouts, and flawless responsiveness are my standards.</p>
                     </div>
-                    <div class="stat-card">
-                        <h3>Interests</h3>
-                        <p>Design systems, typography and helpful user interfaces.</p>
+                    <div class="info-card">
+                        <h3>🔥 Passion Driven</h3>
+                        <p>Design systems, modern UI trends, and building interfaces that people actually love to use — that's what excites me.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills with logos -->
-    <section class="section" id="skills">
+    <!-- Skills Section -->
+    <section id="skills">
         <div class="container">
-            <h2 class="section-title">My <span>Skills</span></h2>
-            <div class="skills-grid-icons">
-                <div class="skill-icon-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo">
+            <h2>My <span>Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
                     <p>HTML</p>
                 </div>
-                <div class="skill-icon-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo">
+                <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
                     <p>CSS</p>
                 </div>
-                <div class="skill-icon-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Git/GitHub logo">
+                <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
                     <p>Git/GitHub</p>
                 </div>
-                <div class="skill-icon-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Responsive Design icon">
-                    <p>Responsive Websites</p>
+                <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Responsive">
+                    <p>Responsive Design</p>
                 </div>
-                <div class="skill-icon-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo">
+                <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                     <p>Python</p>
                 </div>
-                <div class="skill-icon-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C logo">
+                <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
                     <p>C</p>
                 </div>
-                <div class="skill-icon-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ logo">
+                <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
                     <p>C++</p>
                 </div>
-                <div class="skill-icon-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL logo">
+                <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
                     <p>SQL</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects -->
-    <section class="section" id="projects">
+    <!-- Projects Section -->
+    <section id="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="cards-grid">
-                <article class="project-card">
+            <h2>My <span>Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-box">
                     <h3>Portfolio Website</h3>
-                    <p class="project-sub">Responsive HTML CSS portfolio design.</p>
-                    <p class="project-tag">HTML | CSS | Responsive</p>
-                </article>
-                <article class="project-card">
+                    <p>Responsive HTML CSS portfolio design with multiple sections.</p>
+                    <div class="tags">HTML · CSS · Responsive</div>
+                </div>
+                <div class="project-box">
                     <h3>Student Registration Form</h3>
-                    <p class="project-sub">Clean validated form using HTML.</p>
-                    <p class="project-tag">HTML | Forms</p>
-                </article>
-                <article class="project-card">
+                    <p>Clean validated form using HTML with proper structure.</p>
+                    <div class="tags">HTML · Forms</div>
+                </div>
+                <div class="project-box">
                     <h3>Product Landing Page</h3>
-                    <p class="project-sub">Modern UI with flexbox layout.</p>
-                    <p class="project-tag">HTML | CSS | Flexbox</p>
-                </article>
+                    <p>Modern UI with flexbox layout and call-to-action buttons.</p>
+                    <div class="tags">HTML · CSS · Flexbox</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section class="section" id="contact">
+    <!-- Contact Section -->
+    <section id="contact">
         <div class="container">
-            <h2 class="section-title">Contact <span>Me</span></h2>
-            <p class="contact-intro">
-                If you like my work or want to discuss a project, feel free to reach out.
-            </p>
-            <div class="contact-layout">
-                <div class="contact-info">
-                    <p><strong>Email:</strong> vishnoinitya338@gmail.com</p>
-                    <p><strong>Phone:</strong> +91 63981 52425</p>
-                    <p><strong>Location:</strong> Ghaziabad, Uttar Pradesh, India</p>
+            <h2>Contact <span>Me</span></h2>
+            <p class="contact-subtitle">If you like my work or want to discuss a project, feel free to reach out.</p>
+            <div class="contact-wrapper">
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:vishnoinitya338@gmail.com">vishnoinitya338@gmail.com</a>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Phone:</strong>
+                        <a href="tel:+916398152425">+91 63981 52425</a>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Location:</strong>
+                        <span>Ghaziabad, Uttar Pradesh, India</span>
+                    </div>
                 </div>
                 <form class="contact-form">
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
-                    <textarea rows="4" placeholder="Your Message" required></textarea>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
@@ -176,10 +177,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <p>&copy; 2026 NITYA VISHNOI. All rights reserved.</p>
-        </div>
+    <footer>
+        <p>&copy; 2026 NITYA VISHNOI · All Rights Reserved</p>
     </footer>
+
 </body>
 </html>
